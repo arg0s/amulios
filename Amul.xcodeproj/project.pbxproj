@@ -1,0 +1,287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		169715F615FE0A4E009F833D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169715F515FE0A4E009F833D /* UIKit.framework */; };
+		169715F815FE0A4E009F833D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169715F715FE0A4E009F833D /* Foundation.framework */; };
+		169715FA15FE0A4E009F833D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169715F915FE0A4E009F833D /* CoreGraphics.framework */; };
+		1697160015FE0A4E009F833D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 169715FE15FE0A4E009F833D /* InfoPlist.strings */; };
+		1697160215FE0A4E009F833D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1697160115FE0A4E009F833D /* main.m */; };
+		1697160615FE0A4E009F833D /* LLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1697160515FE0A4E009F833D /* LLAppDelegate.m */; };
+		1697160915FE0A4E009F833D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1697160715FE0A4E009F833D /* MainStoryboard.storyboard */; };
+		1697160C15FE0A4E009F833D /* LLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1697160B15FE0A4E009F833D /* LLViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		169715F115FE0A4E009F833D /* Amul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amul.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		169715F515FE0A4E009F833D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		169715F715FE0A4E009F833D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		169715F915FE0A4E009F833D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		169715FD15FE0A4E009F833D /* Amul-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Amul-Info.plist"; sourceTree = "<group>"; };
+		169715FF15FE0A4E009F833D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1697160115FE0A4E009F833D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1697160315FE0A4E009F833D /* Amul-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Amul-Prefix.pch"; sourceTree = "<group>"; };
+		1697160415FE0A4E009F833D /* LLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLAppDelegate.h; sourceTree = "<group>"; };
+		1697160515FE0A4E009F833D /* LLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLAppDelegate.m; sourceTree = "<group>"; };
+		1697160815FE0A4E009F833D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		1697160A15FE0A4E009F833D /* LLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLViewController.h; sourceTree = "<group>"; };
+		1697160B15FE0A4E009F833D /* LLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		169715EE15FE0A4E009F833D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169715F615FE0A4E009F833D /* UIKit.framework in Frameworks */,
+				169715F815FE0A4E009F833D /* Foundation.framework in Frameworks */,
+				169715FA15FE0A4E009F833D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		169715E615FE0A4E009F833D = {
+			isa = PBXGroup;
+			children = (
+				169715FB15FE0A4E009F833D /* Amul */,
+				169715F415FE0A4E009F833D /* Frameworks */,
+				169715F215FE0A4E009F833D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		169715F215FE0A4E009F833D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				169715F115FE0A4E009F833D /* Amul.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		169715F415FE0A4E009F833D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				169715F515FE0A4E009F833D /* UIKit.framework */,
+				169715F715FE0A4E009F833D /* Foundation.framework */,
+				169715F915FE0A4E009F833D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		169715FB15FE0A4E009F833D /* Amul */ = {
+			isa = PBXGroup;
+			children = (
+				1697160415FE0A4E009F833D /* LLAppDelegate.h */,
+				1697160515FE0A4E009F833D /* LLAppDelegate.m */,
+				1697160715FE0A4E009F833D /* MainStoryboard.storyboard */,
+				1697160A15FE0A4E009F833D /* LLViewController.h */,
+				1697160B15FE0A4E009F833D /* LLViewController.m */,
+				169715FC15FE0A4E009F833D /* Supporting Files */,
+			);
+			path = Amul;
+			sourceTree = "<group>";
+		};
+		169715FC15FE0A4E009F833D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				169715FD15FE0A4E009F833D /* Amul-Info.plist */,
+				169715FE15FE0A4E009F833D /* InfoPlist.strings */,
+				1697160115FE0A4E009F833D /* main.m */,
+				1697160315FE0A4E009F833D /* Amul-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		169715F015FE0A4E009F833D /* Amul */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1697160F15FE0A4E009F833D /* Build configuration list for PBXNativeTarget "Amul" */;
+			buildPhases = (
+				169715ED15FE0A4E009F833D /* Sources */,
+				169715EE15FE0A4E009F833D /* Frameworks */,
+				169715EF15FE0A4E009F833D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Amul;
+			productName = Amul;
+			productReference = 169715F115FE0A4E009F833D /* Amul.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		169715E815FE0A4E009F833D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LL;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Aravind Krishnaswamy";
+			};
+			buildConfigurationList = 169715EB15FE0A4E009F833D /* Build configuration list for PBXProject "Amul" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 169715E615FE0A4E009F833D;
+			productRefGroup = 169715F215FE0A4E009F833D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				169715F015FE0A4E009F833D /* Amul */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		169715EF15FE0A4E009F833D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1697160015FE0A4E009F833D /* InfoPlist.strings in Resources */,
+				1697160915FE0A4E009F833D /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		169715ED15FE0A4E009F833D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1697160215FE0A4E009F833D /* main.m in Sources */,
+				1697160615FE0A4E009F833D /* LLAppDelegate.m in Sources */,
+				1697160C15FE0A4E009F833D /* LLViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		169715FE15FE0A4E009F833D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				169715FF15FE0A4E009F833D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1697160715FE0A4E009F833D /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1697160815FE0A4E009F833D /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1697160D15FE0A4E009F833D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1697160E15FE0A4E009F833D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1697161015FE0A4E009F833D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Amul/Amul-Prefix.pch";
+				INFOPLIST_FILE = "Amul/Amul-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1697161115FE0A4E009F833D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Amul/Amul-Prefix.pch";
+				INFOPLIST_FILE = "Amul/Amul-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		169715EB15FE0A4E009F833D /* Build configuration list for PBXProject "Amul" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1697160D15FE0A4E009F833D /* Debug */,
+				1697160E15FE0A4E009F833D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1697160F15FE0A4E009F833D /* Build configuration list for PBXNativeTarget "Amul" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1697161015FE0A4E009F833D /* Debug */,
+				1697161115FE0A4E009F833D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 169715E815FE0A4E009F833D /* Project object */;
+}
