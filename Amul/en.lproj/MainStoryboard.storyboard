@@ -1,24 +1,202 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1906" systemVersion="11A511" targetRuntime="iOS.CocoaTouch" nextObjectID="6" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="12A269" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="zMi-rb-xt8">
     <dependencies>
-        <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="902"/>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
     </dependencies>
     <scenes>
-        <scene sceneID="5">
+        <!--Cartoons TableVC - Amul Cartoon Ads-->
+        <scene sceneID="p49-So-h9y">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
-                <viewController id="2" customClass="LLViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NqQ-Iu-aJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="8xQ-4z-7yt" customClass="LLCartoonsTableVC" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="40" sectionFooterHeight="40" id="neh-54-ptB">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <pickerView key="tableHeaderView" contentMode="scaleToFill" id="ynC-XK-6yT">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <connections>
+                                <outlet property="dataSource" destination="8xQ-4z-7yt" id="kcQ-9o-EN3"/>
+                                <outlet property="delegate" destination="8xQ-4z-7yt" id="TR7-Ok-Z2b"/>
+                            </connections>
+                        </pickerView>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cartoon" rowHeight="180" id="gcB-zb-xyw" customClass="LLCartoonTableCell">
+                                <rect key="frame" x="0.0" y="256" width="320" height="181"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="179"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" id="IkG-D2-q0K">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" id="bfy-Vt-P8e">
+                                                    <rect key="frame" x="9" y="7" width="302" height="171"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="fsX-pb-oQu">
+                                                            <rect key="frame" x="1" y="2" width="300" height="150"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                        <label clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="jqa-U2-PMF">
+                                                            <rect key="frame" x="1" y="149" width="300" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" white="0.90961450729927007" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                            <color key="textColor" white="0.36299612226277378" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="image" destination="fsX-pb-oQu" id="flg-Oe-nNz"/>
+                                    <outlet property="label" destination="jqa-U2-PMF" id="pK3-IY-gtY"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Amul Cartoon Ads" id="PHs-Dk-mpF">
+                        <barButtonItem key="leftBarButtonItem" image="icon_calendar.png" id="H1K-A5-FOw">
+                            <connections>
+                                <action selector="showPicker:" destination="8xQ-4z-7yt" id="mqU-Se-YjC"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="action" id="Dl9-UE-HIg">
+                            <connections>
+                                <segue destination="SHp-BE-H8B" kind="push" id="I1A-rh-KHl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="picker" destination="ynC-XK-6yT" id="ii5-bc-STh"/>
+                    </connections>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="132" y="61"/>
+        </scene>
+        <!--AboutVC - About-->
+        <scene sceneID="ovv-Bd-JKX">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GNp-AR-Yly" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="SHp-BE-H8B" customClass="LLAboutVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jAy-Qf-skH">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="1hQ-jq-qfL">
+                                <rect key="frame" x="0.0" y="284" width="320" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="m5c-cP-ttW">
+                                        <rect key="frame" x="11" y="7" width="299" height="117"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">Amul Cartoon Ads is a tribute to an Indian icon by Levitum Software Labs (http://www.levitum.com), a leading Bangalore mobile apps company. 
+All images are copyright of Amul (http://www.amul.com) and respective owners.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.94000000000000006" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="5tO-0b-rUy">
+                                <rect key="frame" x="0.0" y="-2" width="325" height="208"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" id="l9G-Hw-5cg">
+                                        <rect key="frame" x="10" y="14" width="304" height="180"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <string key="text">Fun. Evergreen. And 100% Indian. Three little ingredients that make the Amul Ads so dear to many of us. 
+If you like Amul ads as much as we do, you may soon find yourself spending long hours exploring ads down memory lane. Enjoy, and spread the word!</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView userInteractionEnabled="NO" alpha="0.10000000000000014" contentMode="scaleToFill" image="flag.png" id="FMl-FK-z2V">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="210"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.95999999999999996" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1DF-Ec-vah">
+                                <rect key="frame" x="20" y="228" width="280" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Yep, I love Amul Cartoon Ads!">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openShare:" destination="SHp-BE-H8B" eventType="touchUpInside" id="2qo-P6-HHH"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="About" id="Tss-wa-Hrc"/>
                 </viewController>
             </objects>
+            <point key="canvasLocation" x="513" y="68"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NU0-re-KSJ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3og-eq-GHC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="zMi-rb-xt8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yki-l2-3rS">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8xQ-4z-7yt" kind="relationship" relationship="rootViewController" id="hEd-UN-m55"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-402" y="61"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="flag.png" width="800" height="633"/>
+        <image name="icon_calendar.png" width="30" height="30"/>
+    </resources>
+    <classes>
+        <class className="LLAboutVC" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LLAboutVC.h"/>
+            <relationships>
+                <relationship kind="action" name="openShare:"/>
+            </relationships>
+        </class>
+        <class className="LLCartoonTableCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LLCartoonTableCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="image" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="label" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="LLCartoonsTableVC" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LLCartoonsTableVC.h"/>
+            <relationships>
+                <relationship kind="action" name="showPicker:"/>
+                <relationship kind="outlet" name="infoView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="picker" candidateClass="UIPickerView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

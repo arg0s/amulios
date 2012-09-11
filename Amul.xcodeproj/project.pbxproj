@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		162162A415FED0730071BF8F /* LLAmulSHKConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 162162A315FED0730071BF8F /* LLAmulSHKConfigurator.m */; };
+		162162A715FEDF0F0071BF8F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 162162A615FEDF0F0071BF8F /* icon.png */; };
+		162162A915FEDFDF0071BF8F /* icon_calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 162162A815FEDFDF0071BF8F /* icon_calendar.png */; };
+		162162AB15FF18040071BF8F /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 162162AA15FF18040071BF8F /* flag.png */; };
+		162ED6BC15FE555500BB5915 /* LLAboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 162ED6BB15FE555500BB5915 /* LLAboutVC.m */; };
 		169715F615FE0A4E009F833D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169715F515FE0A4E009F833D /* UIKit.framework */; };
 		169715F815FE0A4E009F833D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169715F715FE0A4E009F833D /* Foundation.framework */; };
 		169715FA15FE0A4E009F833D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169715F915FE0A4E009F833D /* CoreGraphics.framework */; };
@@ -14,14 +19,24 @@
 		1697160215FE0A4E009F833D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1697160115FE0A4E009F833D /* main.m */; };
 		1697160615FE0A4E009F833D /* LLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1697160515FE0A4E009F833D /* LLAppDelegate.m */; };
 		1697160915FE0A4E009F833D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1697160715FE0A4E009F833D /* MainStoryboard.storyboard */; };
-		1697160C15FE0A4E009F833D /* LLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1697160B15FE0A4E009F833D /* LLViewController.m */; };
+		1697161F15FE0E74009F833D /* LLCartoonsTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1697161E15FE0E74009F833D /* LLCartoonsTableVC.m */; };
+		1697162315FE0ED7009F833D /* LLCartoonTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1697162215FE0ED7009F833D /* LLCartoonTableCell.m */; };
+		1697162615FE14EF009F833D /* pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 1697162515FE14EF009F833D /* pattern.png */; };
+		E6CC908D33054B77AE12EC83 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91EC50DB710242ABB6C68A2F /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		162162A215FED0720071BF8F /* LLAmulSHKConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLAmulSHKConfigurator.h; sourceTree = "<group>"; };
+		162162A315FED0730071BF8F /* LLAmulSHKConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLAmulSHKConfigurator.m; sourceTree = "<group>"; };
+		162162A615FEDF0F0071BF8F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		162162A815FEDFDF0071BF8F /* icon_calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_calendar.png; sourceTree = "<group>"; };
+		162162AA15FF18040071BF8F /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag.png; sourceTree = "<group>"; };
+		162ED6BA15FE555500BB5915 /* LLAboutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLAboutVC.h; sourceTree = "<group>"; };
+		162ED6BB15FE555500BB5915 /* LLAboutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLAboutVC.m; sourceTree = "<group>"; };
 		169715F115FE0A4E009F833D /* Amul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amul.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		169715F515FE0A4E009F833D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		169715F715FE0A4E009F833D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		169715F915FE0A4E009F833D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		169715F515FE0A4E009F833D /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		169715F715FE0A4E009F833D /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		169715F915FE0A4E009F833D /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		169715FD15FE0A4E009F833D /* Amul-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Amul-Info.plist"; sourceTree = "<group>"; };
 		169715FF15FE0A4E009F833D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1697160115FE0A4E009F833D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -29,8 +44,14 @@
 		1697160415FE0A4E009F833D /* LLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLAppDelegate.h; sourceTree = "<group>"; };
 		1697160515FE0A4E009F833D /* LLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLAppDelegate.m; sourceTree = "<group>"; };
 		1697160815FE0A4E009F833D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		1697160A15FE0A4E009F833D /* LLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LLViewController.h; sourceTree = "<group>"; };
-		1697160B15FE0A4E009F833D /* LLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LLViewController.m; sourceTree = "<group>"; };
+		1697161D15FE0E74009F833D /* LLCartoonsTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCartoonsTableVC.h; sourceTree = "<group>"; };
+		1697161E15FE0E74009F833D /* LLCartoonsTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLCartoonsTableVC.m; sourceTree = "<group>"; };
+		1697162115FE0ED7009F833D /* LLCartoonTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLCartoonTableCell.h; sourceTree = "<group>"; };
+		1697162215FE0ED7009F833D /* LLCartoonTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLCartoonTableCell.m; sourceTree = "<group>"; };
+		1697162415FE0EF1009F833D /* Amul.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Amul.h; sourceTree = "<group>"; };
+		1697162515FE14EF009F833D /* pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pattern.png; sourceTree = "<group>"; };
+		5A1ECCA8BD444124B63239DE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		91EC50DB710242ABB6C68A2F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +62,7 @@
 				169715F615FE0A4E009F833D /* UIKit.framework in Frameworks */,
 				169715F815FE0A4E009F833D /* Foundation.framework in Frameworks */,
 				169715FA15FE0A4E009F833D /* CoreGraphics.framework in Frameworks */,
+				E6CC908D33054B77AE12EC83 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +75,7 @@
 				169715FB15FE0A4E009F833D /* Amul */,
 				169715F415FE0A4E009F833D /* Frameworks */,
 				169715F215FE0A4E009F833D /* Products */,
+				5A1ECCA8BD444124B63239DE /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +93,7 @@
 				169715F515FE0A4E009F833D /* UIKit.framework */,
 				169715F715FE0A4E009F833D /* Foundation.framework */,
 				169715F915FE0A4E009F833D /* CoreGraphics.framework */,
+				91EC50DB710242ABB6C68A2F /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -80,9 +104,16 @@
 				1697160415FE0A4E009F833D /* LLAppDelegate.h */,
 				1697160515FE0A4E009F833D /* LLAppDelegate.m */,
 				1697160715FE0A4E009F833D /* MainStoryboard.storyboard */,
-				1697160A15FE0A4E009F833D /* LLViewController.h */,
-				1697160B15FE0A4E009F833D /* LLViewController.m */,
+				1697162415FE0EF1009F833D /* Amul.h */,
+				1697161D15FE0E74009F833D /* LLCartoonsTableVC.h */,
+				1697161E15FE0E74009F833D /* LLCartoonsTableVC.m */,
+				1697162115FE0ED7009F833D /* LLCartoonTableCell.h */,
+				1697162215FE0ED7009F833D /* LLCartoonTableCell.m */,
+				162ED6BA15FE555500BB5915 /* LLAboutVC.h */,
+				162ED6BB15FE555500BB5915 /* LLAboutVC.m */,
 				169715FC15FE0A4E009F833D /* Supporting Files */,
+				162162A215FED0720071BF8F /* LLAmulSHKConfigurator.h */,
+				162162A315FED0730071BF8F /* LLAmulSHKConfigurator.m */,
 			);
 			path = Amul;
 			sourceTree = "<group>";
@@ -90,6 +121,10 @@
 		169715FC15FE0A4E009F833D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				162162AA15FF18040071BF8F /* flag.png */,
+				162162A815FEDFDF0071BF8F /* icon_calendar.png */,
+				162162A615FEDF0F0071BF8F /* icon.png */,
+				1697162515FE14EF009F833D /* pattern.png */,
 				169715FD15FE0A4E009F833D /* Amul-Info.plist */,
 				169715FE15FE0A4E009F833D /* InfoPlist.strings */,
 				1697160115FE0A4E009F833D /* main.m */,
@@ -108,6 +143,7 @@
 				169715ED15FE0A4E009F833D /* Sources */,
 				169715EE15FE0A4E009F833D /* Frameworks */,
 				169715EF15FE0A4E009F833D /* Resources */,
+				A97F88D9113A46E29EBF0D36 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,10 +188,31 @@
 			files = (
 				1697160015FE0A4E009F833D /* InfoPlist.strings in Resources */,
 				1697160915FE0A4E009F833D /* MainStoryboard.storyboard in Resources */,
+				1697162615FE14EF009F833D /* pattern.png in Resources */,
+				162162A715FEDF0F0071BF8F /* icon.png in Resources */,
+				162162A915FEDFDF0071BF8F /* icon_calendar.png in Resources */,
+				162162AB15FF18040071BF8F /* flag.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A97F88D9113A46E29EBF0D36 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		169715ED15FE0A4E009F833D /* Sources */ = {
@@ -164,7 +221,10 @@
 			files = (
 				1697160215FE0A4E009F833D /* main.m in Sources */,
 				1697160615FE0A4E009F833D /* LLAppDelegate.m in Sources */,
-				1697160C15FE0A4E009F833D /* LLViewController.m in Sources */,
+				1697161F15FE0E74009F833D /* LLCartoonsTableVC.m in Sources */,
+				1697162315FE0ED7009F833D /* LLCartoonTableCell.m in Sources */,
+				162ED6BC15FE555500BB5915 /* LLAboutVC.m in Sources */,
+				162162A415FED0730071BF8F /* LLAmulSHKConfigurator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +301,7 @@
 		};
 		1697161015FE0A4E009F833D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A1ECCA8BD444124B63239DE /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Amul/Amul-Prefix.pch";
@@ -252,6 +313,7 @@
 		};
 		1697161115FE0A4E009F833D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A1ECCA8BD444124B63239DE /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Amul/Amul-Prefix.pch";
@@ -280,6 +342,7 @@
 				1697161115FE0A4E009F833D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
