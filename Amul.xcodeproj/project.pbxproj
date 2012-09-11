@@ -12,6 +12,7 @@
 		162162A915FEDFDF0071BF8F /* icon_calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 162162A815FEDFDF0071BF8F /* icon_calendar.png */; };
 		162162AB15FF18040071BF8F /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 162162AA15FF18040071BF8F /* flag.png */; };
 		162ED6BC15FE555500BB5915 /* LLAboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 162ED6BB15FE555500BB5915 /* LLAboutVC.m */; };
+		168F21EF15FF44C800A93265 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 168F21EE15FF44C800A93265 /* icon.png */; };
 		169715F615FE0A4E009F833D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169715F515FE0A4E009F833D /* UIKit.framework */; };
 		169715F815FE0A4E009F833D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169715F715FE0A4E009F833D /* Foundation.framework */; };
 		169715FA15FE0A4E009F833D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169715F915FE0A4E009F833D /* CoreGraphics.framework */; };
@@ -33,6 +34,7 @@
 		162162AA15FF18040071BF8F /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag.png; sourceTree = "<group>"; };
 		162ED6BA15FE555500BB5915 /* LLAboutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLAboutVC.h; sourceTree = "<group>"; };
 		162ED6BB15FE555500BB5915 /* LLAboutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLAboutVC.m; sourceTree = "<group>"; };
+		168F21EE15FF44C800A93265 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		169715F115FE0A4E009F833D /* Amul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amul.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		169715F515FE0A4E009F833D /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		169715F715FE0A4E009F833D /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -72,6 +74,7 @@
 		169715E615FE0A4E009F833D = {
 			isa = PBXGroup;
 			children = (
+				168F21EE15FF44C800A93265 /* icon.png */,
 				169715FB15FE0A4E009F833D /* Amul */,
 				169715F415FE0A4E009F833D /* Frameworks */,
 				169715F215FE0A4E009F833D /* Products */,
@@ -192,6 +195,7 @@
 				162162A715FEDF0F0071BF8F /* icon.png in Resources */,
 				162162A915FEDFDF0071BF8F /* icon_calendar.png in Resources */,
 				162162AB15FF18040071BF8F /* flag.png in Resources */,
+				168F21EF15FF44C800A93265 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,10 +319,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5A1ECCA8BD444124B63239DE /* Pods.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Levitum Software Labs Pvt Ltd";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Amul/Amul-Prefix.pch";
 				INFOPLIST_FILE = "Amul/Amul-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FCD047EB-AE97-49DD-AE91-22E9019C5646";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

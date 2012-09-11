@@ -1,4 +1,4 @@
-platform :ios, 	:deployment_target => "5.0"
+platform :ios, 	:deployment_target => "5.1"
 pod 'Reachability',      '~> 2.0.4'
 pod 'OpenUDID',     	 '~> 1.0.0'
 pod 'LRResty',     	 '~> 0.11.0'
