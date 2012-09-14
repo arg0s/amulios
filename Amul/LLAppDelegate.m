@@ -9,6 +9,7 @@
 #import "LLAppDelegate.h"
 #import "LLAmulSHKConfigurator.h"
 #import "SHKConfiguration.h"
+#import "Amul.h"
 
 @implementation LLAppDelegate
 
@@ -18,6 +19,13 @@
     [SHKConfiguration sharedInstanceWithConfigurator:configurator];
 
     return YES;
+}
+
++ (void)initialize
+{
+    //configure iRate
+    [iRate sharedInstance].daysUntilPrompt = 5;
+    [iRate sharedInstance].usesUntilPrompt = 15;
 }
 
 @end

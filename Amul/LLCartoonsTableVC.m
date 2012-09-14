@@ -8,6 +8,7 @@
 
 #import "LLCartoonsTableVC.h"
 #import <QuartzCore/QuartzCore.h>
+#import "Amul.h"
 
 @interface LLCartoonsTableVC ()
 
@@ -18,7 +19,7 @@
 @synthesize  data;
 @synthesize picker;
 
-#define AMUL_S3_JSON @"http://akiaiwzoruprm2wjp2jq-amul-bucket.s3.amazonaws.com/amul.json" 
+#define AMUL_S3_JSON @"http://d1832ahxutkhx9.cloudfront.net/amul.json" 
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -32,13 +33,23 @@
 - (void) loadModel{
     
     [[LRResty client] get:AMUL_S3_JSON withBlock:^(LRRestyResponse *response) {
-        NSError* error;
-        id responseObj = [NSJSONSerialization JSONObjectWithData:[[response asString] dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&error];
-        NSLog(@"Sections: %i", [responseObj count]);
-        self.data = responseObj;
-        [[self tableView] reloadData];
-        [[self picker] reloadAllComponents];
-        [[self tableView] scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:YES];
+        if ([response status] == 200){
+            NSError* error;
+            id responseObj = [NSJSONSerialization JSONObjectWithData:[[response asString] dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&error];
+            NSLog(@"Sections: %i", [responseObj count]);
+            self.data = responseObj;
+            [[self tableView] reloadData];
+            [[self picker] reloadAllComponents];
+            [[self tableView] scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:YES];
+        }
+        else{
+            NSLog(@"Unable to load data feed");
+            BlockAlertView* alert = [[BlockAlertView alloc] initWithTitle:@"Network Error" message:@"Unable to load cartoon ads. Please try again later!"];
+            [alert addButtonWithTitle:@"OK" block:^(void){
+                exit(1);
+            }];
+            [alert show];
+        }
     }];
     
 }

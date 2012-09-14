@@ -14,5 +14,7 @@
 #import "LLCartoonTableCell.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <LRResty/LRResty.h>
+#import <BlockAlertsAnd-ActionSheets/BlockAlertView.h>
+#import <iRate.h>
 
 #endif
