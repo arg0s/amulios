@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="12A269" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="zMi-rb-xt8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12A269" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="zMi-rb-xt8">
     <dependencies>
-        <deployment defaultVersion="1296" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
+        <deployment version="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
     </dependencies>
     <scenes>
         <!--Cartoons TableVC - Amul Cartoon Ads-->
         <scene sceneID="p49-So-h9y">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NqQ-Iu-aJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="8xQ-4z-7yt" customClass="LLCartoonsTableVC" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="40" sectionFooterHeight="40" id="neh-54-ptB">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="232" sectionHeaderHeight="40" sectionFooterHeight="40" id="neh-54-ptB">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                         <pickerView key="tableHeaderView" contentMode="scaleToFill" id="ynC-XK-6yT">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -23,38 +22,31 @@
                             </connections>
                         </pickerView>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cartoon" rowHeight="180" id="gcB-zb-xyw" customClass="LLCartoonTableCell">
-                                <rect key="frame" x="0.0" y="256" width="320" height="181"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cartoon" rowHeight="232" id="gcB-zb-xyw" customClass="LLCartoonTableCell">
+                                <rect key="frame" x="0.0" y="256" width="320" height="233"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="179"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="231"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" id="IkG-D2-q0K">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                                        <view contentMode="scaleToFill" id="bfy-Vt-P8e">
+                                            <rect key="frame" x="9" y="18" width="302" height="196"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" id="bfy-Vt-P8e">
-                                                    <rect key="frame" x="9" y="7" width="302" height="171"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="fsX-pb-oQu">
+                                                    <rect key="frame" x="1" y="2" width="300" height="150"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="fsX-pb-oQu">
-                                                            <rect key="frame" x="1" y="2" width="300" height="150"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        </imageView>
-                                                        <label clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="jqa-U2-PMF">
-                                                            <rect key="frame" x="1" y="149" width="300" height="21"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <color key="backgroundColor" white="0.90961450729927007" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                                            <color key="textColor" white="0.36299612226277378" alpha="1" colorSpace="calibratedWhite"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                </view>
+                                                </imageView>
+                                                <label clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jqa-U2-PMF">
+                                                    <rect key="frame" x="1" y="148" width="300" height="47"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.90961450729927007" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                    <color key="textColor" white="0.36299612226277378" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -82,21 +74,27 @@
                         <outlet property="picker" destination="ynC-XK-6yT" id="ii5-bc-STh"/>
                     </connections>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NqQ-Iu-aJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="61"/>
         </scene>
         <!--AboutVC - About-->
         <scene sceneID="ovv-Bd-JKX">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GNp-AR-Yly" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="SHp-BE-H8B" customClass="LLAboutVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jAy-Qf-skH">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <userGuides>
+                            <userLayoutGuide location="224" affinity="minY"/>
+                            <userLayoutGuide location="160" affinity="minX"/>
+                            <userLayoutGuide location="224" affinity="minY"/>
+                            <userLayoutGuide location="160" affinity="minX"/>
+                        </userGuides>
                         <subviews>
                             <view contentMode="scaleToFill" id="1hQ-jq-qfL">
-                                <rect key="frame" x="0.0" y="284" width="320" height="132"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="344" width="320" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" heightSizable="YES"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="m5c-cP-ttW">
                                         <rect key="frame" x="11" y="7" width="299" height="117"/>
@@ -112,11 +110,14 @@ All images are copyright of Amul (http://www.amul.com) and respective owners.</s
                                 <color key="backgroundColor" white="0.94000000000000006" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" id="5tO-0b-rUy">
-                                <rect key="frame" x="0.0" y="-2" width="325" height="208"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="-3" width="325" height="336"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <userGuides>
+                                    <userLayoutGuide location="104" affinity="minY"/>
+                                </userGuides>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" id="l9G-Hw-5cg">
-                                        <rect key="frame" x="10" y="14" width="304" height="180"/>
+                                        <rect key="frame" x="10" y="14" width="304" height="308"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <string key="text">Fun. Evergreen. And 100% Indian. Three little ingredients that make the Amul Ads so dear to many of us. 
@@ -128,36 +129,36 @@ If you like Amul ads as much as we do, you may soon find yourself spending long 
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="210"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1DF-Ec-vah">
+                                        <rect key="frame" x="20" y="253" width="280" height="59"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <state key="normal" title="Yep, I love Amul Cartoon Ads!">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openShare:" destination="SHp-BE-H8B" eventType="touchUpInside" id="2qo-P6-HHH"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.95999999999999996" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1DF-Ec-vah">
-                                <rect key="frame" x="20" y="228" width="280" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <state key="normal" title="Yep, I love Amul Cartoon Ads!">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="openShare:" destination="SHp-BE-H8B" eventType="touchUpInside" id="2qo-P6-HHH"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="About" id="Tss-wa-Hrc"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GNp-AR-Yly" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="513" y="68"/>
+            <point key="canvasLocation" x="497" y="61"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="NU0-re-KSJ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3og-eq-GHC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController definesPresentationContext="YES" id="zMi-rb-xt8" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yki-l2-3rS">
                         <autoresizingMask key="autoresizingMask"/>
@@ -166,6 +167,7 @@ If you like Amul ads as much as we do, you may soon find yourself spending long 
                         <segue destination="8xQ-4z-7yt" kind="relationship" relationship="rootViewController" id="hEd-UN-m55"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3og-eq-GHC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-402" y="61"/>
         </scene>
@@ -200,6 +202,6 @@ If you like Amul ads as much as we do, you may soon find yourself spending long 
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
 </document>

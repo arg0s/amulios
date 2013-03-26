@@ -12,6 +12,10 @@
 		162162A915FEDFDF0071BF8F /* icon_calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 162162A815FEDFDF0071BF8F /* icon_calendar.png */; };
 		162162AB15FF18040071BF8F /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 162162AA15FF18040071BF8F /* flag.png */; };
 		162ED6BC15FE555500BB5915 /* LLAboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 162ED6BB15FE555500BB5915 /* LLAboutVC.m */; };
+		16563E1B160C66A800C8E5C0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16563E18160C66A800C8E5C0 /* Default-568h@2x.png */; };
+		16563E1C160C66A800C8E5C0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 16563E19160C66A800C8E5C0 /* Default.png */; };
+		16563E1D160C66A800C8E5C0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16563E1A160C66A800C8E5C0 /* Default@2x.png */; };
+		16563E35160EDFBF00C8E5C0 /* AmulStoryboard~iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16563E33160EDFBF00C8E5C0 /* AmulStoryboard~iPad.storyboard */; };
 		168F21EF15FF44C800A93265 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 168F21EE15FF44C800A93265 /* icon.png */; };
 		169715F615FE0A4E009F833D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169715F515FE0A4E009F833D /* UIKit.framework */; };
 		169715F815FE0A4E009F833D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 169715F715FE0A4E009F833D /* Foundation.framework */; };
@@ -34,6 +38,10 @@
 		162162AA15FF18040071BF8F /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag.png; sourceTree = "<group>"; };
 		162ED6BA15FE555500BB5915 /* LLAboutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLAboutVC.h; sourceTree = "<group>"; };
 		162ED6BB15FE555500BB5915 /* LLAboutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLAboutVC.m; sourceTree = "<group>"; };
+		16563E18160C66A800C8E5C0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		16563E19160C66A800C8E5C0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
+		16563E1A160C66A800C8E5C0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		16563E34160EDFBF00C8E5C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = "en.lproj/AmulStoryboard~iPad.storyboard"; sourceTree = "<group>"; };
 		168F21EE15FF44C800A93265 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		169715F115FE0A4E009F833D /* Amul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Amul.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		169715F515FE0A4E009F833D /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -107,6 +115,7 @@
 				1697160415FE0A4E009F833D /* LLAppDelegate.h */,
 				1697160515FE0A4E009F833D /* LLAppDelegate.m */,
 				1697160715FE0A4E009F833D /* MainStoryboard.storyboard */,
+				16563E33160EDFBF00C8E5C0 /* AmulStoryboard~iPad.storyboard */,
 				1697162415FE0EF1009F833D /* Amul.h */,
 				1697161D15FE0E74009F833D /* LLCartoonsTableVC.h */,
 				1697161E15FE0E74009F833D /* LLCartoonsTableVC.m */,
@@ -124,6 +133,9 @@
 		169715FC15FE0A4E009F833D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				16563E18160C66A800C8E5C0 /* Default-568h@2x.png */,
+				16563E19160C66A800C8E5C0 /* Default.png */,
+				16563E1A160C66A800C8E5C0 /* Default@2x.png */,
 				162162AA15FF18040071BF8F /* flag.png */,
 				162162A815FEDFDF0071BF8F /* icon_calendar.png */,
 				162162A615FEDF0F0071BF8F /* icon.png */,
@@ -196,6 +208,10 @@
 				162162A915FEDFDF0071BF8F /* icon_calendar.png in Resources */,
 				162162AB15FF18040071BF8F /* flag.png in Resources */,
 				168F21EF15FF44C800A93265 /* icon.png in Resources */,
+				16563E1B160C66A800C8E5C0 /* Default-568h@2x.png in Resources */,
+				16563E1C160C66A800C8E5C0 /* Default.png in Resources */,
+				16563E1D160C66A800C8E5C0 /* Default@2x.png in Resources */,
+				16563E35160EDFBF00C8E5C0 /* AmulStoryboard~iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +251,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		16563E33160EDFBF00C8E5C0 /* AmulStoryboard~iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16563E34160EDFBF00C8E5C0 /* en */,
+			);
+			name = "AmulStoryboard~iPad.storyboard";
+			sourceTree = "<group>";
+		};
 		169715FE15FE0A4E009F833D /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -307,10 +331,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5A1ECCA8BD444124B63239DE /* Pods.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Aravind Krishnaswamy (WW5PKY999C)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Amul/Amul-Prefix.pch";
 				INFOPLIST_FILE = "Amul/Amul-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B5928282-B1AE-4040-AFA9-CAB3CADAA8DF";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -323,8 +351,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Amul/Amul-Prefix.pch";
 				INFOPLIST_FILE = "Amul/Amul-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FCD047EB-AE97-49DD-AE91-22E9019C5646";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

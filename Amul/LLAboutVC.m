@@ -46,7 +46,7 @@
 	SHKItem *item = [SHKItem URL:url title:@"Amul Cartoon Ads is Awesome!"];
     
 	// Get the ShareKit action sheet
-	//SHKActionSheet *actionSheet = [SHKActionSheet actionSheetForItem:item];
+//	SHKActionSheet *actionSheet = [SHKActionSheet actionSheetForItem:item];
     
 	// Display the action sheet
 	//[actionSheet showFromToolbar:self.navigationController.toolbar];

@@ -19,7 +19,8 @@
 @synthesize  data;
 @synthesize picker;
 
-#define AMUL_S3_JSON @"http://d1832ahxutkhx9.cloudfront.net/amul.json" 
+#define AMUL_2S3_JSON @"http://d1832ahxutkhx9.cloudfront.net/amul.json"
+#define AMUL_S3_JSON @"http://akiaiwzoruprm2wjp2jq-amul-bucket.s3.amazonaws.com/amul.json"
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -100,7 +101,9 @@
     LLCartoonTableCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     // Configure the cell...
     NSDictionary* cartoon  = [[[data objectAtIndex:[indexPath section]] objectForKey:@"topicals"] objectAtIndex:[indexPath row]];
-    NSString* labelString = [cartoon objectForKey:@"alt"];
+    NSString* labelString = [cartoon objectForKey:@"description"];
+    if(!labelString)
+        labelString = [cartoon objectForKey:@"alt"];
     NSString* imageString = [NSString stringWithFormat:@"http://amul.com%@", [cartoon objectForKey:@"src"]];
     [[cell image] setImageWithURL:[NSURL URLWithString:imageString] placeholderImage:[UIImage imageNamed:@"pattern"]];
     [[cell label] setText:labelString];
@@ -109,7 +112,7 @@
 #pragma mark - Table view delegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 180.0;
+    return 232.0;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{

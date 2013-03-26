@@ -11,11 +11,11 @@
 @implementation LLAmulSHKConfigurator
 
 - (NSString*)facebookAppId {
-	return @"XXXXXXXXXXXXXXXXXXX";
+	return @"460600007296628";
 }
 
 - (NSString*)facebookLocalAppId {
-	return @"XXXXXXXXXXXXXXXXXXXXXXX";
+	return @"5628c24dc0235fca52b1fe93a300dd85";
 }
 
 - (NSString*)appName {
