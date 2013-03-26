@@ -16,5 +16,6 @@
 #import <LRResty/LRResty.h>
 #import <BlockAlertsAnd-ActionSheets/BlockAlertView.h>
 #import <iRate.h>
+#import "SHKFacebook.h"
 
 #endif

@@ -18,5 +18,6 @@
 @property (strong, nonatomic) IBOutlet UIImageView *image;
 @property (strong, nonatomic) IBOutlet UILabel *label;
 
+- (IBAction)didClickShareButton:(id)sender;
 
 @end

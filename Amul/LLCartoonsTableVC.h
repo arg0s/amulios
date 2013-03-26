@@ -14,11 +14,13 @@
     id data;
     UIPickerView *picker;
     UIView *infoView;
+    NSMutableArray* expandedCells;
 }
 
 @property (nonatomic, strong) id data;
 @property (strong, nonatomic) IBOutlet UIPickerView *picker;
 @property (strong, nonatomic) IBOutlet UIView *infoView;
+@property (nonatomic, strong) NSMutableArray* expandedCells;
 
 - (IBAction)showPicker:(id)sender;
 

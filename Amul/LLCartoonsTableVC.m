@@ -12,15 +12,17 @@
 
 @interface LLCartoonsTableVC ()
 
+
 @end
 
 @implementation LLCartoonsTableVC
 
 @synthesize  data;
 @synthesize picker;
+@synthesize expandedCells;
 
-#define AMUL_2S3_JSON @"http://d1832ahxutkhx9.cloudfront.net/amul.json"
-#define AMUL_S3_JSON @"http://akiaiwzoruprm2wjp2jq-amul-bucket.s3.amazonaws.com/amul.json"
+#define AMUL_S3_JSON @"http://d1832ahxutkhx9.cloudfront.net/amul.json"
+#define AMUL_S3_JSON_LIVE @"http://akiaiwzoruprm2wjp2jq-amul-bucket.s3.amazonaws.com/amul.json"
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -39,6 +41,7 @@
             id responseObj = [NSJSONSerialization JSONObjectWithData:[[response asString] dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:&error];
             NSLog(@"Sections: %i", [responseObj count]);
             self.data = responseObj;
+            self.expandedCells = [NSMutableArray array];
             [[self tableView] reloadData];
             [[self picker] reloadAllComponents];
             [[self tableView] scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:YES];
@@ -97,8 +100,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"cartoon";
-    LLCartoonTableCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    LLCartoonTableCell *cell;
+    if ([expandedCells containsObject:indexPath]) {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"cartoonMax"];
+    }
+    else{
+        cell = [tableView dequeueReusableCellWithIdentifier:@"cartoon"];
+    }
     // Configure the cell...
     NSDictionary* cartoon  = [[[data objectAtIndex:[indexPath section]] objectForKey:@"topicals"] objectAtIndex:[indexPath row]];
     NSString* labelString = [cartoon objectForKey:@"description"];
@@ -112,7 +120,10 @@
 #pragma mark - Table view delegate
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 232.0;
+    if ([expandedCells containsObject:indexPath]) {
+        return 232.0;
+    }
+    return 188.0;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
@@ -133,6 +144,14 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+    
+    if ([expandedCells containsObject:indexPath]) {
+        [expandedCells removeObject:indexPath];
+    }
+    else{
+        [expandedCells addObject:indexPath];
+    }
+    [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
 }
 
 

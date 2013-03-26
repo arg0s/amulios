@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		161A77E417019E2B0009BCB3 /* facebook_like_thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 161A77E317019E2B0009BCB3 /* facebook_like_thumb.png */; };
+		161A77E61701A6310009BCB3 /* AppStore.png in Resources */ = {isa = PBXBuildFile; fileRef = 161A77E51701A6310009BCB3 /* AppStore.png */; };
 		162162A415FED0730071BF8F /* LLAmulSHKConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 162162A315FED0730071BF8F /* LLAmulSHKConfigurator.m */; };
 		162162A715FEDF0F0071BF8F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 162162A615FEDF0F0071BF8F /* icon.png */; };
 		162162A915FEDFDF0071BF8F /* icon_calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 162162A815FEDFDF0071BF8F /* icon_calendar.png */; };
@@ -31,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		161A77E317019E2B0009BCB3 /* facebook_like_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook_like_thumb.png; sourceTree = "<group>"; };
+		161A77E51701A6310009BCB3 /* AppStore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppStore.png; sourceTree = "<group>"; };
 		162162A215FED0720071BF8F /* LLAmulSHKConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLAmulSHKConfigurator.h; sourceTree = "<group>"; };
 		162162A315FED0730071BF8F /* LLAmulSHKConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLAmulSHKConfigurator.m; sourceTree = "<group>"; };
 		162162A615FEDF0F0071BF8F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
@@ -133,6 +137,8 @@
 		169715FC15FE0A4E009F833D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				161A77E51701A6310009BCB3 /* AppStore.png */,
+				161A77E317019E2B0009BCB3 /* facebook_like_thumb.png */,
 				16563E18160C66A800C8E5C0 /* Default-568h@2x.png */,
 				16563E19160C66A800C8E5C0 /* Default.png */,
 				16563E1A160C66A800C8E5C0 /* Default@2x.png */,
@@ -212,6 +218,8 @@
 				16563E1C160C66A800C8E5C0 /* Default.png in Resources */,
 				16563E1D160C66A800C8E5C0 /* Default@2x.png in Resources */,
 				16563E35160EDFBF00C8E5C0 /* AmulStoryboard~iPad.storyboard in Resources */,
+				161A77E417019E2B0009BCB3 /* facebook_like_thumb.png in Resources */,
+				161A77E61701A6310009BCB3 /* AppStore.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

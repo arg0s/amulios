@@ -31,4 +31,25 @@
     return [NSArray arrayWithObjects:@"publish_stream", @"user_about_me", @"user_birthday",nil];
 }
 
+- (NSArray*)defaultFavoriteURLSharers {
+    return [NSArray arrayWithObjects:@"SHKTwitter",@"SHKFacebook", @"SHKMail", nil];
+}
+
+- (NSString*)twitterConsumerKey {
+	return @"l1X0roMFqr6Qr3mwhzqBg";
+}
+
+- (NSString*)twitterSecret {
+	return @"6R16ri2MMx5nwCuVqfKU51dMrkm4vD6WryCuXGjdXxM";
+}
+// You need to set this if using OAuth, see note above (xAuth users can skip it)
+- (NSString*)twitterCallbackUrl {
+	return @"";
+}
+// To use xAuth, set to 1
+- (NSNumber*)twitterUseXAuth {
+	return [NSNumber numberWithInt:1];
+}
+
+
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Amul.h"
 
 
 @interface LLAboutVC : UIViewController
