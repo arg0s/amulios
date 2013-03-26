@@ -13,10 +13,12 @@
     
     UIImageView *image;
     UILabel *label;
+    NSString* alt;
 }
 
 @property (strong, nonatomic) IBOutlet UIImageView *image;
 @property (strong, nonatomic) IBOutlet UILabel *label;
+@property (strong, nonatomic) NSString* alt;
 
 - (IBAction)didClickShareButton:(id)sender;
 

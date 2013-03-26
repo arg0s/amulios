@@ -50,6 +50,7 @@
 	// Display the action sheet
 	[actionSheet showFromToolbar:self.navigationController.toolbar];
     //[SHKFacebook shareItem:item];
+    [GANTracker sendEventWithCategory:@"About" withAction:@"Share_Link" withLabel:@"iTunes Link" withValue:nil];
 
 }
 @end

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		161A77E417019E2B0009BCB3 /* facebook_like_thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 161A77E317019E2B0009BCB3 /* facebook_like_thumb.png */; };
 		161A77E61701A6310009BCB3 /* AppStore.png in Resources */ = {isa = PBXBuildFile; fileRef = 161A77E51701A6310009BCB3 /* AppStore.png */; };
+		161A78301701CA860009BCB3 /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 161A782F1701CA860009BCB3 /* libGoogleAnalytics.a */; };
+		161A78321701CAA20009BCB3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161A78311701CAA20009BCB3 /* CoreData.framework */; };
+		161A78341701CAAA0009BCB3 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161A78331701CAAA0009BCB3 /* SystemConfiguration.framework */; };
 		162162A415FED0730071BF8F /* LLAmulSHKConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 162162A315FED0730071BF8F /* LLAmulSHKConfigurator.m */; };
 		162162A715FEDF0F0071BF8F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 162162A615FEDF0F0071BF8F /* icon.png */; };
 		162162A915FEDFDF0071BF8F /* icon_calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 162162A815FEDFDF0071BF8F /* icon_calendar.png */; };
@@ -35,6 +38,14 @@
 /* Begin PBXFileReference section */
 		161A77E317019E2B0009BCB3 /* facebook_like_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook_like_thumb.png; sourceTree = "<group>"; };
 		161A77E51701A6310009BCB3 /* AppStore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppStore.png; sourceTree = "<group>"; };
+		161A782A1701CA860009BCB3 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAI.h; path = third/GAN/GAI.h; sourceTree = SOURCE_ROOT; };
+		161A782B1701CA860009BCB3 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAITrackedViewController.h; path = third/GAN/GAITrackedViewController.h; sourceTree = SOURCE_ROOT; };
+		161A782C1701CA860009BCB3 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAITracker.h; path = third/GAN/GAITracker.h; sourceTree = SOURCE_ROOT; };
+		161A782D1701CA860009BCB3 /* GAITransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAITransaction.h; path = third/GAN/GAITransaction.h; sourceTree = SOURCE_ROOT; };
+		161A782E1701CA860009BCB3 /* GAITransactionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAITransactionItem.h; path = third/GAN/GAITransactionItem.h; sourceTree = SOURCE_ROOT; };
+		161A782F1701CA860009BCB3 /* libGoogleAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalytics.a; path = third/GAN/libGoogleAnalytics.a; sourceTree = SOURCE_ROOT; };
+		161A78311701CAA20009BCB3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		161A78331701CAAA0009BCB3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		162162A215FED0720071BF8F /* LLAmulSHKConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLAmulSHKConfigurator.h; sourceTree = "<group>"; };
 		162162A315FED0730071BF8F /* LLAmulSHKConfigurator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLAmulSHKConfigurator.m; sourceTree = "<group>"; };
 		162162A615FEDF0F0071BF8F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
@@ -73,16 +84,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				161A78341701CAAA0009BCB3 /* SystemConfiguration.framework in Frameworks */,
+				161A78321701CAA20009BCB3 /* CoreData.framework in Frameworks */,
 				169715F615FE0A4E009F833D /* UIKit.framework in Frameworks */,
 				169715F815FE0A4E009F833D /* Foundation.framework in Frameworks */,
 				169715FA15FE0A4E009F833D /* CoreGraphics.framework in Frameworks */,
 				E6CC908D33054B77AE12EC83 /* libPods.a in Frameworks */,
+				161A78301701CA860009BCB3 /* libGoogleAnalytics.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		161A78281701CA670009BCB3 /* GAN */ = {
+			isa = PBXGroup;
+			children = (
+				161A782A1701CA860009BCB3 /* GAI.h */,
+				161A782B1701CA860009BCB3 /* GAITrackedViewController.h */,
+				161A782C1701CA860009BCB3 /* GAITracker.h */,
+				161A782D1701CA860009BCB3 /* GAITransaction.h */,
+				161A782E1701CA860009BCB3 /* GAITransactionItem.h */,
+				161A782F1701CA860009BCB3 /* libGoogleAnalytics.a */,
+			);
+			name = GAN;
+			sourceTree = "<group>";
+		};
 		169715E615FE0A4E009F833D = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +132,8 @@
 		169715F415FE0A4E009F833D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				161A78331701CAAA0009BCB3 /* SystemConfiguration.framework */,
+				161A78311701CAA20009BCB3 /* CoreData.framework */,
 				169715F515FE0A4E009F833D /* UIKit.framework */,
 				169715F715FE0A4E009F833D /* Foundation.framework */,
 				169715F915FE0A4E009F833D /* CoreGraphics.framework */,
@@ -127,6 +156,7 @@
 				1697162215FE0ED7009F833D /* LLCartoonTableCell.m */,
 				162ED6BA15FE555500BB5915 /* LLAboutVC.h */,
 				162ED6BB15FE555500BB5915 /* LLAboutVC.m */,
+				161A78281701CA670009BCB3 /* GAN */,
 				169715FC15FE0A4E009F833D /* Supporting Files */,
 				162162A215FED0720071BF8F /* LLAmulSHKConfigurator.h */,
 				162162A315FED0730071BF8F /* LLAmulSHKConfigurator.m */,
@@ -343,7 +373,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Amul/Amul-Prefix.pch";
 				INFOPLIST_FILE = "Amul/Amul-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/third/GAN\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B5928282-B1AE-4040-AFA9-CAB3CADAA8DF";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -359,7 +393,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Amul/Amul-Prefix.pch";
 				INFOPLIST_FILE = "Amul/Amul-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/third/GAN\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;

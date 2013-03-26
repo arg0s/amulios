@@ -112,9 +112,18 @@
     NSString* labelString = [cartoon objectForKey:@"description"];
     if(!labelString)
         labelString = [cartoon objectForKey:@"alt"];
+    NSString* alt = [cartoon objectForKey:@"alt"];
+    alt = alt?alt:@"";
     NSString* imageString = [NSString stringWithFormat:@"http://amul.com%@", [cartoon objectForKey:@"src"]];
     [[cell image] setImageWithURL:[NSURL URLWithString:imageString] placeholderImage:[UIImage imageNamed:@"pattern"]];
     [[cell label] setText:labelString];
+    [cell setAlt:alt];
+    
+    [GANTracker sendEventWithCategory:@"Carousel"
+                        withAction:@"ViewTile"
+                         withLabel:alt
+                         withValue:[NSNumber numberWithInt:[indexPath row]]];
+    
     return cell;
 }
 #pragma mark - Table view delegate
@@ -145,11 +154,24 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
     
+    NSDictionary* cartoon  = [[[data objectAtIndex:[indexPath section]] objectForKey:@"topicals"] objectAtIndex:[indexPath row]];
+    NSString* alt = [cartoon objectForKey:@"alt"];
+    alt = alt?alt:@"";
+
     if ([expandedCells containsObject:indexPath]) {
         [expandedCells removeObject:indexPath];
+        [GANTracker sendEventWithCategory:@"Tile"
+                               withAction:@"UnselectTile"
+                                withLabel:alt
+                                withValue:[NSNumber numberWithInt:[indexPath row]]];
+
     }
     else{
         [expandedCells addObject:indexPath];
+        [GANTracker sendEventWithCategory:@"Tile"
+                               withAction:@"SelectTile"
+                                withLabel:alt
+                                withValue:[NSNumber numberWithInt:[indexPath row]]];
     }
     [tableView reloadRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
 }
@@ -161,6 +183,9 @@
 {
     NSIndexPath* path = [NSIndexPath indexPathForRow:0 inSection:row];
     [[self tableView] scrollToRowAtIndexPath:path atScrollPosition:UITableViewScrollPositionTop animated:YES];
+    if (!!data) {
+        [GANTracker sendEventWithCategory:@"Calendar" withAction:@"Selected_Year" withLabel:[[data objectAtIndex:row] objectForKey:@"year"] withValue:[NSNumber numberWithInt:row]];
+    }
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component

@@ -11,6 +11,7 @@
 @implementation LLCartoonTableCell
 @synthesize image;
 @synthesize label;
+@synthesize alt;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -41,5 +42,6 @@
     
     SHKItem *item = [SHKItem image:result title:@"Check out this awesome cartoon from the Amul Cartoon Ads iPhone app!"];
     [SHKFacebook shareItem:item];
+    [GANTracker sendEventWithCategory:@"Tile" withAction:@"Share_Tile" withLabel:alt withValue:nil];
 }
 @end

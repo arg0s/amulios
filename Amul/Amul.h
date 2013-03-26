@@ -18,4 +18,8 @@
 #import <iRate.h>
 #import "SHKFacebook.h"
 
+#import "GAI.h"
+
+#define GANTracker [[GAI sharedInstance] defaultTracker]
+
 #endif
