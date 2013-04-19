@@ -32,6 +32,24 @@
 		1697161F15FE0E74009F833D /* LLCartoonsTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1697161E15FE0E74009F833D /* LLCartoonsTableVC.m */; };
 		1697162315FE0ED7009F833D /* LLCartoonTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1697162215FE0ED7009F833D /* LLCartoonTableCell.m */; };
 		1697162615FE14EF009F833D /* pattern.png in Resources */ = {isa = PBXBuildFile; fileRef = 1697162515FE14EF009F833D /* pattern.png */; };
+		169E83401721483C00F2967C /* TourView1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 169E833F1721483C00F2967C /* TourView1.xib */; };
+		169E834717214A4A00F2967C /* tour4.png in Resources */ = {isa = PBXBuildFile; fileRef = 169E834217214A4A00F2967C /* tour4.png */; };
+		169E834817214A4A00F2967C /* tour3.png in Resources */ = {isa = PBXBuildFile; fileRef = 169E834317214A4A00F2967C /* tour3.png */; };
+		169E834917214A4A00F2967C /* tour5.png in Resources */ = {isa = PBXBuildFile; fileRef = 169E834417214A4A00F2967C /* tour5.png */; };
+		169E834A17214A4A00F2967C /* tour2.png in Resources */ = {isa = PBXBuildFile; fileRef = 169E834517214A4A00F2967C /* tour2.png */; };
+		169E834B17214A4A00F2967C /* tour1.png in Resources */ = {isa = PBXBuildFile; fileRef = 169E834617214A4A00F2967C /* tour1.png */; };
+		169E834D17214A9900F2967C /* TourView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 169E834C17214A9900F2967C /* TourView2.xib */; };
+		169E834F17214C0500F2967C /* TourView3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 169E834E17214C0500F2967C /* TourView3.xib */; };
+		169E835117214C6300F2967C /* icon512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = 169E835017214C6300F2967C /* icon512x512.png */; };
+		169E835417214E6D00F2967C /* TourView5.xib in Resources */ = {isa = PBXBuildFile; fileRef = 169E835217214E6D00F2967C /* TourView5.xib */; };
+		169E835517214E6D00F2967C /* TourView4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 169E835317214E6D00F2967C /* TourView4.xib */; };
+		169E835717214F4600F2967C /* TourView6.xib in Resources */ = {isa = PBXBuildFile; fileRef = 169E835617214F4600F2967C /* TourView6.xib */; };
+		169E835A1721527D00F2967C /* LLTourView.m in Sources */ = {isa = PBXBuildFile; fileRef = 169E83591721527D00F2967C /* LLTourView.m */; };
+		169E835C1721549900F2967C /* Levitum_Logo_Grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 169E835B1721549900F2967C /* Levitum_Logo_Grey.png */; };
+		169E835E1721558800F2967C /* TourView7.xib in Resources */ = {isa = PBXBuildFile; fileRef = 169E835D1721558800F2967C /* TourView7.xib */; };
+		169E836E1721B26600F2967C /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 169E836D1721B26600F2967C /* AirshipConfig.plist */; };
+		169E83821725318500F2967C /* facebook_like_thumb pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 169E83811725318500F2967C /* facebook_like_thumb pressed.png */; };
+		169E839817257C0600F2967C /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 169E839717257C0600F2967C /* icon@2x.png */; };
 		E6CC908D33054B77AE12EC83 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91EC50DB710242ABB6C68A2F /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +93,25 @@
 		1697162215FE0ED7009F833D /* LLCartoonTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLCartoonTableCell.m; sourceTree = "<group>"; };
 		1697162415FE0EF1009F833D /* Amul.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Amul.h; sourceTree = "<group>"; };
 		1697162515FE14EF009F833D /* pattern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pattern.png; sourceTree = "<group>"; };
+		169E833F1721483C00F2967C /* TourView1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TourView1.xib; sourceTree = "<group>"; };
+		169E834217214A4A00F2967C /* tour4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tour4.png; sourceTree = "<group>"; };
+		169E834317214A4A00F2967C /* tour3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tour3.png; sourceTree = "<group>"; };
+		169E834417214A4A00F2967C /* tour5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tour5.png; sourceTree = "<group>"; };
+		169E834517214A4A00F2967C /* tour2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tour2.png; sourceTree = "<group>"; };
+		169E834617214A4A00F2967C /* tour1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tour1.png; sourceTree = "<group>"; };
+		169E834C17214A9900F2967C /* TourView2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TourView2.xib; sourceTree = "<group>"; };
+		169E834E17214C0500F2967C /* TourView3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TourView3.xib; sourceTree = "<group>"; };
+		169E835017214C6300F2967C /* icon512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon512x512.png; sourceTree = SOURCE_ROOT; };
+		169E835217214E6D00F2967C /* TourView5.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TourView5.xib; sourceTree = "<group>"; };
+		169E835317214E6D00F2967C /* TourView4.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TourView4.xib; sourceTree = "<group>"; };
+		169E835617214F4600F2967C /* TourView6.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TourView6.xib; sourceTree = "<group>"; };
+		169E83581721527C00F2967C /* LLTourView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLTourView.h; sourceTree = "<group>"; };
+		169E83591721527D00F2967C /* LLTourView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLTourView.m; sourceTree = "<group>"; };
+		169E835B1721549900F2967C /* Levitum_Logo_Grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Levitum_Logo_Grey.png; sourceTree = "<group>"; };
+		169E835D1721558800F2967C /* TourView7.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TourView7.xib; sourceTree = "<group>"; };
+		169E836D1721B26600F2967C /* AirshipConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AirshipConfig.plist; sourceTree = "<group>"; };
+		169E83811725318500F2967C /* facebook_like_thumb pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook_like_thumb pressed.png"; sourceTree = "<group>"; };
+		169E839717257C0600F2967C /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = SOURCE_ROOT; };
 		5A1ECCA8BD444124B63239DE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		91EC50DB710242ABB6C68A2F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -147,8 +184,6 @@
 			children = (
 				1697160415FE0A4E009F833D /* LLAppDelegate.h */,
 				1697160515FE0A4E009F833D /* LLAppDelegate.m */,
-				1697160715FE0A4E009F833D /* MainStoryboard.storyboard */,
-				16563E33160EDFBF00C8E5C0 /* AmulStoryboard~iPad.storyboard */,
 				1697162415FE0EF1009F833D /* Amul.h */,
 				1697161D15FE0E74009F833D /* LLCartoonsTableVC.h */,
 				1697161E15FE0E74009F833D /* LLCartoonsTableVC.m */,
@@ -156,10 +191,21 @@
 				1697162215FE0ED7009F833D /* LLCartoonTableCell.m */,
 				162ED6BA15FE555500BB5915 /* LLAboutVC.h */,
 				162ED6BB15FE555500BB5915 /* LLAboutVC.m */,
-				161A78281701CA670009BCB3 /* GAN */,
-				169715FC15FE0A4E009F833D /* Supporting Files */,
+				169E83581721527C00F2967C /* LLTourView.h */,
+				169E83591721527D00F2967C /* LLTourView.m */,
 				162162A215FED0720071BF8F /* LLAmulSHKConfigurator.h */,
 				162162A315FED0730071BF8F /* LLAmulSHKConfigurator.m */,
+				161A78281701CA670009BCB3 /* GAN */,
+				169715FC15FE0A4E009F833D /* Supporting Files */,
+				169E833F1721483C00F2967C /* TourView1.xib */,
+				169E834C17214A9900F2967C /* TourView2.xib */,
+				169E834E17214C0500F2967C /* TourView3.xib */,
+				169E835317214E6D00F2967C /* TourView4.xib */,
+				169E835217214E6D00F2967C /* TourView5.xib */,
+				169E835617214F4600F2967C /* TourView6.xib */,
+				169E835D1721558800F2967C /* TourView7.xib */,
+				1697160715FE0A4E009F833D /* MainStoryboard.storyboard */,
+				16563E33160EDFBF00C8E5C0 /* AmulStoryboard~iPad.storyboard */,
 			);
 			path = Amul;
 			sourceTree = "<group>";
@@ -167,8 +213,18 @@
 		169715FC15FE0A4E009F833D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				169E839717257C0600F2967C /* icon@2x.png */,
+				169E836D1721B26600F2967C /* AirshipConfig.plist */,
+				169E835B1721549900F2967C /* Levitum_Logo_Grey.png */,
+				169E835017214C6300F2967C /* icon512x512.png */,
+				169E834217214A4A00F2967C /* tour4.png */,
+				169E834317214A4A00F2967C /* tour3.png */,
+				169E834417214A4A00F2967C /* tour5.png */,
+				169E834517214A4A00F2967C /* tour2.png */,
+				169E834617214A4A00F2967C /* tour1.png */,
 				161A77E51701A6310009BCB3 /* AppStore.png */,
 				161A77E317019E2B0009BCB3 /* facebook_like_thumb.png */,
+				169E83811725318500F2967C /* facebook_like_thumb pressed.png */,
 				16563E18160C66A800C8E5C0 /* Default-568h@2x.png */,
 				16563E19160C66A800C8E5C0 /* Default.png */,
 				16563E1A160C66A800C8E5C0 /* Default@2x.png */,
@@ -250,6 +306,23 @@
 				16563E35160EDFBF00C8E5C0 /* AmulStoryboard~iPad.storyboard in Resources */,
 				161A77E417019E2B0009BCB3 /* facebook_like_thumb.png in Resources */,
 				161A77E61701A6310009BCB3 /* AppStore.png in Resources */,
+				169E83401721483C00F2967C /* TourView1.xib in Resources */,
+				169E834717214A4A00F2967C /* tour4.png in Resources */,
+				169E834817214A4A00F2967C /* tour3.png in Resources */,
+				169E834917214A4A00F2967C /* tour5.png in Resources */,
+				169E834A17214A4A00F2967C /* tour2.png in Resources */,
+				169E834B17214A4A00F2967C /* tour1.png in Resources */,
+				169E834D17214A9900F2967C /* TourView2.xib in Resources */,
+				169E834F17214C0500F2967C /* TourView3.xib in Resources */,
+				169E835117214C6300F2967C /* icon512x512.png in Resources */,
+				169E835417214E6D00F2967C /* TourView5.xib in Resources */,
+				169E835517214E6D00F2967C /* TourView4.xib in Resources */,
+				169E835717214F4600F2967C /* TourView6.xib in Resources */,
+				169E835C1721549900F2967C /* Levitum_Logo_Grey.png in Resources */,
+				169E835E1721558800F2967C /* TourView7.xib in Resources */,
+				169E836E1721B26600F2967C /* AirshipConfig.plist in Resources */,
+				169E83821725318500F2967C /* facebook_like_thumb pressed.png in Resources */,
+				169E839817257C0600F2967C /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +356,7 @@
 				1697162315FE0ED7009F833D /* LLCartoonTableCell.m in Sources */,
 				162ED6BC15FE555500BB5915 /* LLAboutVC.m in Sources */,
 				162162A415FED0730071BF8F /* LLAmulSHKConfigurator.m in Sources */,
+				169E835A1721527D00F2967C /* LLTourView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +443,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5A1ECCA8BD444124B63239DE /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Aravind Krishnaswamy (WW5PKY999C)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Amul/Amul-Prefix.pch";
@@ -379,7 +454,7 @@
 					"\"$(SRCROOT)/third/GAN\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B5928282-B1AE-4040-AFA9-CAB3CADAA8DF";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "18240B9E-392E-4B3F-AD31-77863EDBE6DD";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -399,7 +474,7 @@
 					"\"$(SRCROOT)/third/GAN\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "046E03BB-2153-4EA4-8A0D-61F3542456FC";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

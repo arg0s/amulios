@@ -21,6 +21,7 @@
 @property (strong, nonatomic) IBOutlet UIPickerView *picker;
 @property (strong, nonatomic) IBOutlet UIView *infoView;
 @property (nonatomic, strong) NSMutableArray* expandedCells;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *btnCalendar;
 
 - (IBAction)showPicker:(id)sender;
 

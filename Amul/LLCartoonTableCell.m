@@ -31,6 +31,22 @@
 
 - (IBAction)didClickShareButton:(id)sender {
     
+    static dispatch_once_t onceToken = 0;
+    dispatch_once(&onceToken, ^{
+        void (^notificationHandler) (NSNotification *) = ^(NSNotification *note){
+            NSString* note_name = [note name];
+            [GANTracker sendEventWithCategory:@"Share_Tile_Progress" withAction:alt withLabel:note_name withValue:[NSNumber numberWithInt:0]];
+            NSLog(@"Tile>>Share_Tile>>%@", note_name);
+        };
+        
+        [[NSNotificationCenter defaultCenter] addObserverForName:@"SHKSendDidStartNotification" object:nil queue:[NSOperationQueue mainQueue] usingBlock:notificationHandler];
+        [[NSNotificationCenter defaultCenter] addObserverForName:@"SHKSendDidFinish" object:nil queue:[NSOperationQueue mainQueue] usingBlock:notificationHandler];
+        [[NSNotificationCenter defaultCenter] addObserverForName:@"SHKSendDidFailWithError" object:nil queue:[NSOperationQueue mainQueue] usingBlock:notificationHandler];
+        [[NSNotificationCenter defaultCenter] addObserverForName:@"SHKSendDidCancel" object:nil queue:[NSOperationQueue mainQueue] usingBlock:notificationHandler];
+    });
+    
+
+    
     UIImage *backgroundImage = [[self image] image];
     UIImage *watermarkImage = [UIImage imageNamed:@"AppStore.png"];
     
@@ -42,6 +58,7 @@
     
     SHKItem *item = [SHKItem image:result title:@"Check out this awesome cartoon from the Amul Cartoon Ads iPhone app!"];
     [SHKFacebook shareItem:item];
-    [GANTracker sendEventWithCategory:@"Tile" withAction:@"Share_Tile" withLabel:alt withValue:nil];
+    [GANTracker sendEventWithCategory:@"Tile" withAction:@"Share_Tile" withLabel:alt withValue:[NSNumber numberWithInt:0]];
+    [GANTracker sendEventWithCategory:@"Share_Tile_Progress" withAction:alt withLabel:@"SHKSendDidStart" withValue:[NSNumber numberWithInt:0]];
 }
 @end

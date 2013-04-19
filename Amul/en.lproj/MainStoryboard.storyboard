@@ -13,17 +13,9 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
-                        <pickerView key="tableHeaderView" contentMode="scaleToFill" id="ynC-XK-6yT">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <connections>
-                                <outlet property="dataSource" destination="8xQ-4z-7yt" id="kcQ-9o-EN3"/>
-                                <outlet property="delegate" destination="8xQ-4z-7yt" id="TR7-Ok-Z2b"/>
-                            </connections>
-                        </pickerView>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cartoon" rowHeight="188" id="gcB-zb-xyw" customClass="LLCartoonTableCell">
-                                <rect key="frame" x="0.0" y="256" width="320" height="188"/>
+                                <rect key="frame" x="0.0" y="40" width="320" height="188"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="187"/>
@@ -34,7 +26,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="fsX-pb-oQu">
-                                                    <rect key="frame" x="1" y="2" width="300" height="150"/>
+                                                    <rect key="frame" x="1" y="1" width="300" height="150"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jqa-U2-PMF">
@@ -48,6 +40,13 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1983" contentMode="left" text="*MOST SHARED*" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZzJ-vT-fa0">
+                                            <rect key="frame" x="9" y="0.0" width="111" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="10"/>
+                                            <color key="textColor" red="0.82316377737226276" green="0.16885264598540145" blue="0.047046076642335767" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
@@ -57,7 +56,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cartoonMax" rowHeight="232" id="Ve4-5q-BP6" userLabel="Cartoon Table Cell Max - cartoon" customClass="LLCartoonTableCell">
-                                <rect key="frame" x="0.0" y="444" width="320" height="233"/>
+                                <rect key="frame" x="0.0" y="228" width="320" height="233"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="231"/>
@@ -84,7 +83,8 @@
                                                                 <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
-                                                            <state key="highlighted">
+                                                            <state key="selected" image="facebook_like_thumb pressed.png"/>
+                                                            <state key="highlighted" image="facebook_like_thumb pressed.png">
                                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             </state>
                                                             <connections>
@@ -105,6 +105,13 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1983" contentMode="left" text="*MOST SHARED*" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lAv-EK-xrC">
+                                            <rect key="frame" x="9" y="0.0" width="111" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="10"/>
+                                            <color key="textColor" red="0.82316377740000002" green="0.168852646" blue="0.047046076639999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
@@ -116,19 +123,45 @@
                         </prototypes>
                     </tableView>
                     <navigationItem key="navigationItem" title="Amul Cartoon Ads" id="PHs-Dk-mpF">
-                        <barButtonItem key="leftBarButtonItem" image="icon_calendar.png" id="H1K-A5-FOw">
-                            <connections>
-                                <action selector="showPicker:" destination="8xQ-4z-7yt" id="mqU-Se-YjC"/>
-                            </connections>
+                        <barButtonItem key="leftBarButtonItem" enabled="NO" title="Item" style="plain" id="fg6-In-B7e">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cpk-eu-cId">
+                                <rect key="frame" x="5" y="5" width="40" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="icon_calendar.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPicker:" destination="8xQ-4z-7yt" eventType="touchUpInside" id="4LF-Ph-9ya"/>
+                                </connections>
+                            </button>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="action" id="Dl9-UE-HIg">
-                            <connections>
-                                <segue destination="SHp-BE-H8B" kind="push" id="I1A-rh-KHl"/>
-                            </connections>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="CwI-IN-su7">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Nzg-A0-4wR">
+                                <rect key="frame" x="297" y="12" width="18" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="SHp-BE-H8B" kind="modal" modalTransitionStyle="flipHorizontal" id="0Y1-z7-R4L"/>
+                                </connections>
+                            </button>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="picker" destination="ynC-XK-6yT" id="ii5-bc-STh"/>
+                        <outlet property="btnCalendar" destination="fg6-In-B7e" id="3aG-SG-11F"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NqQ-Iu-aJs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -140,21 +173,21 @@
             <objects>
                 <viewController id="SHp-BE-H8B" customClass="LLAboutVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jAy-Qf-skH">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <userGuides>
                             <userLayoutGuide location="224" affinity="minY"/>
-                            <userLayoutGuide location="160" affinity="minX"/>
+                            <userLayoutGuide location="159" affinity="minX"/>
                             <userLayoutGuide location="224" affinity="minY"/>
                             <userLayoutGuide location="160" affinity="minX"/>
                         </userGuides>
                         <subviews>
                             <view contentMode="scaleToFill" id="1hQ-jq-qfL">
-                                <rect key="frame" x="0.0" y="344" width="320" height="160"/>
+                                <rect key="frame" x="0.0" y="418" width="320" height="174"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES" heightSizable="YES"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="m5c-cP-ttW">
-                                        <rect key="frame" x="11" y="7" width="299" height="117"/>
+                                        <rect key="frame" x="11" y="2" width="299" height="117"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <string key="text">Amul Cartoon Ads is a tribute to an Indian icon by Levitum Software Labs (http://www.levitum.com), a leading Bangalore mobile apps company. 
@@ -167,14 +200,14 @@ All images are copyright of Amul (http://www.amul.com) and respective owners.</s
                                 <color key="backgroundColor" white="0.94000000000000006" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" id="5tO-0b-rUy">
-                                <rect key="frame" x="0.0" y="-3" width="325" height="336"/>
+                                <rect key="frame" x="0.0" y="40" width="325" height="365"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <userGuides>
                                     <userLayoutGuide location="104" affinity="minY"/>
                                 </userGuides>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" id="l9G-Hw-5cg">
-                                        <rect key="frame" x="10" y="14" width="304" height="308"/>
+                                        <rect key="frame" x="10" y="14" width="304" height="337"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <string key="text">Fun. Evergreen. And 100% Indian. Three little ingredients that make the Amul Ads so dear to many of us. 
@@ -187,7 +220,7 @@ If you like Amul ads as much as we do, you may soon find yourself spending long 
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1DF-Ec-vah">
-                                        <rect key="frame" x="20" y="253" width="280" height="59"/>
+                                        <rect key="frame" x="20" y="274" width="280" height="64"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <state key="normal" title="Yep, I love Amul Cartoon Ads!">
@@ -204,6 +237,19 @@ If you like Amul ads as much as we do, you may soon find yourself spending long 
                                 </subviews>
                                 <color key="backgroundColor" white="0.95999999999999996" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <navigationBar contentMode="scaleToFill" id="jdY-q4-Xdz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Made In India" id="zA9-vO-1O3">
+                                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="nA9-kW-dYI">
+                                            <connections>
+                                                <action selector="doneClicked:" destination="SHp-BE-H8B" id="l6Q-iQ-hMK"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -230,6 +276,7 @@ If you like Amul ads as much as we do, you may soon find yourself spending long 
         </scene>
     </scenes>
     <resources>
+        <image name="facebook_like_thumb pressed.png" width="300" height="257"/>
         <image name="facebook_like_thumb.png" width="300" height="257"/>
         <image name="flag.png" width="800" height="633"/>
         <image name="icon_calendar.png" width="30" height="30"/>
@@ -238,6 +285,7 @@ If you like Amul ads as much as we do, you may soon find yourself spending long 
         <class className="LLAboutVC" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LLAboutVC.h"/>
             <relationships>
+                <relationship kind="action" name="doneClicked:"/>
                 <relationship kind="action" name="openShare:"/>
             </relationships>
         </class>
@@ -253,6 +301,7 @@ If you like Amul ads as much as we do, you may soon find yourself spending long 
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LLCartoonsTableVC.h"/>
             <relationships>
                 <relationship kind="action" name="showPicker:"/>
+                <relationship kind="outlet" name="btnCalendar" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="infoView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="picker" candidateClass="UIPickerView"/>
             </relationships>

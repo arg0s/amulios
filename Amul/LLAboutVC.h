@@ -10,7 +10,8 @@
 #import "Amul.h"
 
 
-@interface LLAboutVC : UIViewController
+@interface LLAboutVC : UIViewController<SHKSharerDelegate>
 - (IBAction)openShare:(id)sender;
+- (IBAction)doneClicked:(id)sender;
 
 @end
