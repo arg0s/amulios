@@ -22,7 +22,7 @@
 #import "UAirship.h"
 #import "UAPush.h"
 #import "UATagUtils.h"
-
+#import <Crashlytics/Crashlytics.h>
 #import "GAI.h"
 
 #define GANTracker [[GAI sharedInstance] defaultTracker]

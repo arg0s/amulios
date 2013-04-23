@@ -11,4 +11,12 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+
+// Helper macros to avoid all the userdefaults boilerplate
+#define NSDefaultNotificationCenter [NSNotificationCenter defaultCenter]
+#define NSStandardDefaults [NSUserDefaults standardUserDefaults]
+#define UserDefaults(strKey) [NSStandardDefaults objectForKey:strKey]
+#define UserDefaultsStr(strKey) [NSStandardDefaults stringForKey:strKey]
+
+
 #endif

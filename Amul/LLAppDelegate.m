@@ -15,6 +15,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSString *defaultsPath = [[NSBundle mainBundle] pathForResource:@"UserDefaults" ofType:@"plist"];
+    NSDictionary *appDefaults = [NSDictionary dictionaryWithContentsOfFile:defaultsPath];
+    [[NSUserDefaults standardUserDefaults] registerDefaults:appDefaults];
+
+    
     LLAmulSHKConfigurator *configurator = [[LLAmulSHKConfigurator alloc] init];
     [SHKConfiguration sharedInstanceWithConfigurator:configurator];
     [SHK flushOfflineQueue];
@@ -50,6 +55,7 @@
     // Create tracker instance.
     id<GAITracker> tracker = [[GAI sharedInstance] trackerWithTrackingId:@"UA-35664860-2"];
     
+    [Crashlytics startWithAPIKey:UserDefaults(@"crashlytics_key")];
     
     return YES;
 }

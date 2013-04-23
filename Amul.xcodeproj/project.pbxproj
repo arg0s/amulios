@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1603CD031726690C000E2FBB /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1603CD021726690C000E2FBB /* Crashlytics.framework */; };
+		1603CD1117266C0C000E2FBB /* UserDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1603CD1017266C0C000E2FBB /* UserDefaults.plist */; };
 		161A77E417019E2B0009BCB3 /* facebook_like_thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 161A77E317019E2B0009BCB3 /* facebook_like_thumb.png */; };
 		161A77E61701A6310009BCB3 /* AppStore.png in Resources */ = {isa = PBXBuildFile; fileRef = 161A77E51701A6310009BCB3 /* AppStore.png */; };
 		161A78301701CA860009BCB3 /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 161A782F1701CA860009BCB3 /* libGoogleAnalytics.a */; };
@@ -54,6 +56,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1603CD021726690C000E2FBB /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		1603CD1017266C0C000E2FBB /* UserDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserDefaults.plist; sourceTree = "<group>"; };
 		161A77E317019E2B0009BCB3 /* facebook_like_thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook_like_thumb.png; sourceTree = "<group>"; };
 		161A77E51701A6310009BCB3 /* AppStore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppStore.png; sourceTree = "<group>"; };
 		161A782A1701CA860009BCB3 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAI.h; path = third/GAN/GAI.h; sourceTree = SOURCE_ROOT; };
@@ -128,12 +132,29 @@
 				169715FA15FE0A4E009F833D /* CoreGraphics.framework in Frameworks */,
 				E6CC908D33054B77AE12EC83 /* libPods.a in Frameworks */,
 				161A78301701CA860009BCB3 /* libGoogleAnalytics.a in Frameworks */,
+				1603CD031726690C000E2FBB /* Crashlytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1603CD0F17266BE8000E2FBB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				169E833F1721483C00F2967C /* TourView1.xib */,
+				169E834C17214A9900F2967C /* TourView2.xib */,
+				169E834E17214C0500F2967C /* TourView3.xib */,
+				169E835317214E6D00F2967C /* TourView4.xib */,
+				169E835217214E6D00F2967C /* TourView5.xib */,
+				169E835617214F4600F2967C /* TourView6.xib */,
+				169E835D1721558800F2967C /* TourView7.xib */,
+				1697160715FE0A4E009F833D /* MainStoryboard.storyboard */,
+				16563E33160EDFBF00C8E5C0 /* AmulStoryboard~iPad.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 		161A78281701CA670009BCB3 /* GAN */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +190,7 @@
 		169715F415FE0A4E009F833D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1603CD021726690C000E2FBB /* Crashlytics.framework */,
 				161A78331701CAAA0009BCB3 /* SystemConfiguration.framework */,
 				161A78311701CAA20009BCB3 /* CoreData.framework */,
 				169715F515FE0A4E009F833D /* UIKit.framework */,
@@ -197,15 +219,7 @@
 				162162A315FED0730071BF8F /* LLAmulSHKConfigurator.m */,
 				161A78281701CA670009BCB3 /* GAN */,
 				169715FC15FE0A4E009F833D /* Supporting Files */,
-				169E833F1721483C00F2967C /* TourView1.xib */,
-				169E834C17214A9900F2967C /* TourView2.xib */,
-				169E834E17214C0500F2967C /* TourView3.xib */,
-				169E835317214E6D00F2967C /* TourView4.xib */,
-				169E835217214E6D00F2967C /* TourView5.xib */,
-				169E835617214F4600F2967C /* TourView6.xib */,
-				169E835D1721558800F2967C /* TourView7.xib */,
-				1697160715FE0A4E009F833D /* MainStoryboard.storyboard */,
-				16563E33160EDFBF00C8E5C0 /* AmulStoryboard~iPad.storyboard */,
+				1603CD0F17266BE8000E2FBB /* Storyboards */,
 			);
 			path = Amul;
 			sourceTree = "<group>";
@@ -214,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				169E839717257C0600F2967C /* icon@2x.png */,
+				1603CD1017266C0C000E2FBB /* UserDefaults.plist */,
 				169E836D1721B26600F2967C /* AirshipConfig.plist */,
 				169E835B1721549900F2967C /* Levitum_Logo_Grey.png */,
 				169E835017214C6300F2967C /* icon512x512.png */,
@@ -251,6 +266,7 @@
 				169715EE15FE0A4E009F833D /* Frameworks */,
 				169715EF15FE0A4E009F833D /* Resources */,
 				A97F88D9113A46E29EBF0D36 /* Copy Pods Resources */,
+				1603CD00172668A2000E2FBB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -323,12 +339,26 @@
 				169E836E1721B26600F2967C /* AirshipConfig.plist in Resources */,
 				169E83821725318500F2967C /* facebook_like_thumb pressed.png in Resources */,
 				169E839817257C0600F2967C /* icon@2x.png in Resources */,
+				1603CD1117266C0C000E2FBB /* UserDefaults.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1603CD00172668A2000E2FBB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run 49e7eb2ecc1612598a7e2c53f283429e1eeecddb";
+		};
 		A97F88D9113A46E29EBF0D36 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -445,6 +475,10 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Aravind Krishnaswamy (WW5PKY999C)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Amul/Amul-Prefix.pch";
 				INFOPLIST_FILE = "Amul/Amul-Info.plist";
@@ -465,6 +499,10 @@
 			baseConfigurationReference = 5A1ECCA8BD444124B63239DE /* Pods.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Levitum Software Labs Pvt Ltd";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Amul/Amul-Prefix.pch";
 				INFOPLIST_FILE = "Amul/Amul-Info.plist";
